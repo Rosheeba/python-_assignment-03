@@ -1,0 +1,18 @@
+# Create a dictionary with students' names and their scores
+students_scores = {
+    "Arshima": 85,
+    "Arshika": 92,
+    "Kaifa": 78
+}
+
+# Function to print the score of a specific student
+def print_student_score(name):
+    if name in students_scores:
+        print(f"{name}'s score is: {students_scores[name]}")
+    else:
+        print(f"Student {name} not found.")
+
+# Example usage
+print_student_score("Arshika")  # Output: Bob's score is: 92
+print_student_score("Arshima")  # Output: Alice's score is: 85
+print_student_score("mehar")  # Output: Student David not found.
