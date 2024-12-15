@@ -1,0 +1,10 @@
+import math
+
+def rhombus_area(diagonal1, diagonal2):
+    return 0.5 * diagonal1 * diagonal2
+
+# Example usage
+d1 = 10
+d2 = 8
+area = rhombus_area(d1, d2)
+print(f"The area of the rhombus with diagonals {d1} and {d2} is {area}.")
