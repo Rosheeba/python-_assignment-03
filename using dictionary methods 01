@@ -1,0 +1,25 @@
+# Step 1: Start with an empty dictionary
+students_scores = {}
+
+# Step 1: Add 3 key-value pairs
+students_scores["Arshima"] = 85
+students_scores["Arshika"] = 92
+students_scores["Kaifa"] = 78
+
+print("After adding 3 key-value pairs:", students_scores)
+
+# Step 2: Update the score of one student
+students_scores["Arshima"] = 90
+print("After updating Arshima's score:", students_scores)
+
+# Step 3: Remove a student from the dictionary
+del students_scores["Kaifa"]
+print("After removing Kaifa:", students_scores)
+
+# Step 4: Use the get() method to retrieve a value safely
+score = students_scores.get("Arshika", "Student not found")
+print("Arshika's score:", score)
+
+# Trying to get a score for a student not in the dictionary
+score = students_scores.get("Mehar", "Student not found")
+print("Mehar's score:", score)
