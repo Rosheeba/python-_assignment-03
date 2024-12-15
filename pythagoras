@@ -1,0 +1,10 @@
+import math
+
+def pythagoras(a, b):
+    return math.sqrt(a**2 + b**2)
+
+# Example usage
+side1 = 3
+side2 = 4
+hypotenuse = pythagoras(side1, side2)
+print(f"The hypotenuse of a right triangle with sides {side1} and {side2} is {hypotenuse}.")
