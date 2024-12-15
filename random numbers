@@ -1,0 +1,12 @@
+import random
+
+def generate_random_numbers(n, a, b):
+    random_numbers = [random.randint(a, b) for _ in range(n)]
+    return random_numbers
+
+# Example usage
+n = 5
+a = 1
+b = 10
+random_numbers = generate_random_numbers(n, a, b)
+print(random_numbers)  # Output: A list of 5 random integers between 1 and 10
