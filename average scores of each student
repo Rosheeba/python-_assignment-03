@@ -1,0 +1,13 @@
+def calculate_average_scores(students_scores):
+    for student, scores in students_scores.items():
+        average_score = sum(scores) / len(scores)
+        print(f"{student}'s average score is: {average_score:.2f}")
+
+# Example usage
+students_scores = {
+    "Arshima": (85, 90, 88),
+    "Arshika": (78, 82, 80),
+    "Kaifa": (92, 95, 93)
+}
+
+calculate_average_scores(students_scores)
