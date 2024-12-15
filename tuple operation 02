@@ -1,0 +1,14 @@
+import random
+
+# Generate a tuple of 5 random numbers between 1 and 10
+random_numbers = tuple(random.randint(1, 10) for _ in range(5))
+
+# Check if a specific number (e.g., 7) exists in the tuple
+specific_number = 7
+if specific_number in random_numbers:
+    print(f"The number {specific_number} exists in the tuple {random_numbers}.")
+else:
+    print(f"The number {specific_number} does not exist in the tuple {random_numbers}.")
+
+# Example usage
+print("Generated tuple:", random_numbers)
